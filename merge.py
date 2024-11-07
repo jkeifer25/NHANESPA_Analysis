@@ -57,7 +57,7 @@ try:
     merged_df = incremental_merge(csv_files)
 
     # Step 5: Save the final merged DataFrame to a CSV file
-    output_file = "merged_result.csv"
+    output_file = "data/merged_result.csv"
     merged_df.to_csv(output_file, index=False)
     print(f"Merged CSV saved to: {os.path.abspath(output_file)}")
 
